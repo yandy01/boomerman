@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.app{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#sec,#secf{
+    position: absolute;
+    width: 100%;
+    background-image: url('https://s.cafebazaar.ir/images/upload/screenshot/com.free.arcade.game.classic.bombman.game-9849d1fa-243b-4784-a240-d9640818b575.png?x-img=v1/resize,h_600,lossless_false/optimize');
+    background-size: cover; /* This will make the image cover the entire element */
+    background-position: center center; /* This will center the image */
+}
+#sec{
+    top: 0;
+    height:20px;
+}
+#secf{
+    bottom: 0;
+    height:50px;
+}
+#game{
+    position: absolute;
+    color: teal;
+    font-weight: 900;
+    font-size: 5.5rem;
+    font-style: italic;
+    top: 15px;
+}
+
+.contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 320px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#title {
+    font-size: 2.5em;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 90%;
+    display: block;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+input[type="button"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    background-color: teal;
+    color: #fff;
+    border: 2px solid teal;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.8s ease-in-out;
+}
+
+input[type="button"]:hover {
+    border: 2px solid teal;
+    color: teal;
+    background: #fff;
+}
+
+
+
+/* ================================================================================================= */
+/* =================================== ROOM ======================================================== */
+/* ================================================================================================= */
+
+.player {
+    display: grid;
+    grid-template-areas:
+      'roomPart1 roomPart2'
+      'roomPart3 roomPart4';
+    width: 300px;
+    height: 120px;
+    /* background: teal; */
+    /* box-shadow: inset 0px 0px 5px rgb(9, 9, 9); */
+    /* overflow-x: scroll; */
+  }
+  
+  .roomPart1,
+  .roomPart2,
+  .roomPart3,
+  .roomPart4 {
+    box-shadow: inset 0px 0px 3px rgb(12, 12, 12);
+    border: 1px solid #000;
+    padding: 20px 20px;
+    margin: 3px;
+  }
+
+  .image{
+    width: 50px;
+    border-radius: 150px 70px;
+    margin-left: 30px;
+  }
+  .time{
+    font-size: large;
+    font-weight: 600;
+  }
